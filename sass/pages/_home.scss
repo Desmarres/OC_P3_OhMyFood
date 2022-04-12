@@ -1,0 +1,39 @@
+.homePage h1 {
+    font-family: $font-text, sans-serif;
+    font-size: 1.8em;
+}
+
+.location{
+    background-color: darken($color: $colour-bg, $amount: 5%);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px outset darken($color: $colour-bg, $amount: 10%);
+    iframe{
+        width: 16px;
+        height: 20px;
+        margin-right: 14px;
+    }
+    p{
+        width: 150px;
+        font-weight: 500;
+    }
+}
+
+.presentation{
+    background-color: $colour-bg;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    p{
+        font-weight: 300;
+    }
+    .btn-validate{
+        margin: 15px 0;
+    }
+}

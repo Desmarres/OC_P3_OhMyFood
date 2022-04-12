@@ -1,0 +1,10 @@
+body {
+    font-family: $font-text, sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: $font-title, sans-serif;
+}
