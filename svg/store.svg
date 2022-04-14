@@ -1,0 +1,49 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="svg__store"
+    width="1em"
+    height="1em"
+    fill="black"
+    stroke="black"
+    viewBox="0 0 1000 1000"
+>
+    <path
+        stroke-width="70"
+        d="
+            M 165,535
+            L 165,815
+            M 835,535
+            L 835,815
+        "
+    />
+    <path
+        stroke-width="200"
+        d="
+            M 130,795
+            L 870,795
+        "
+    />
+    <path
+        stroke-width="200"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="
+            M 195,235
+            L 240,150
+            L 750,150
+            L 795,235
+            L 195,235
+            L 150,320
+            L 840,320
+            L 795,235
+            L 840,320
+            c 0,100 -40,100 -40,0
+            c 0,-100 -177,-100 -177,0
+            c 0,100 -40,100 -40,0
+            c 0,-100 -176,-100 -176,0
+            c 0,100 -40,100 -40,0
+            c 0,-100 -177,-100 -177,0
+            c 0,100 -40,100 -40,0
+        "
+    />
+</svg>

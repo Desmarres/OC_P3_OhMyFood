@@ -1,0 +1,26 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="svg__listing"
+    width="1em"
+    height="1em"
+    viewBox="0 0 90 120"
+    fill="none"
+    stroke="black"
+    stroke-width="10"
+>
+    <path d="
+        M 35,30
+        L 115,30
+        M 15,30
+        L 25,30
+        M 35,60
+        L 115,60
+        M 15,60
+        L 25,60
+        M 35,90
+        L 115,90
+        M 15,90
+        L 25,90
+    " >
+    </path>
+</svg>
