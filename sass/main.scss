@@ -4,7 +4,13 @@
 @import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/svg";
 
+@import "./layout/navigation";
 @import "./layout/header";
+@import "./layout/footer";
+
+@import "./sections/hero";
+@import "./sections/cta";
 
 @import "./pages/home";

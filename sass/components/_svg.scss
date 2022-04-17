@@ -1,0 +1,24 @@
+.svg{
+    &__smartphone{
+        :nth-child(1){
+            fill: lighten($colour-outside,50%);
+            stroke: lighten($colour-outside,50%);
+        }
+        :nth-child(2), :nth-child(3){
+            fill: $colour-inside;
+            stroke: $colour-inside;
+        }
+    }
+    &__listing{
+        fill:"none";
+        stroke: lighten($colour-outside,50%);
+    }
+    &__store{        
+        fill: lighten($colour-outside,50%);
+        stroke: lighten($colour-outside,50%);
+    }
+    &__heart{
+        stroke: $colour-outside;
+        fill: transparent;
+    }
+}

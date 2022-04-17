@@ -1,0 +1,60 @@
+nav{
+    background-color: $colour-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    h2{
+        width: $width-mobile;
+    }
+    ul{
+        width: $width-mobile;
+        li{            
+            margin: 20px 0;
+            figure{
+                display: flex;
+                flex-direction: column;
+                height: 250px;
+                border-radius: $border-radius-card-nav;
+                box-shadow: 2px 6px 8px $colour-shadow;
+                position: relative;
+                img{
+                    object-fit: cover;
+                    object-position: bottom;
+                    border-radius: $border-radius-card-nav $border-radius-card-nav 0 0;
+                    height: 175px;
+                }
+                .new{
+                    position: absolute;
+                    right: 12px;
+                    top: 12px;
+                    background-color: $colour-tertiary;
+                    width: 80px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: darken($colour-tertiary, 38%);
+                    font-weight: bold;
+                    font-size: 0.9em;
+                }
+                .banner{
+                    height: 75px;
+                    width: 100%;
+                    background-color: $colour-inside;
+                    border-radius: 0 0 $border-radius-card-nav $border-radius-card-nav;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px;
+                    figcaption{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    svg{
+                        height: 30px;
+                    }
+                }
+            }
+        }        
+    }
+}
