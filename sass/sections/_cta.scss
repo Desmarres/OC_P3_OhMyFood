@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     border-top: 3px outset darken($color: $colour-bg, $amount: 10%);
-    img{
+    svg{
         width: 16px;
         height: 20px;
         margin-right: 14px;
@@ -14,6 +14,13 @@
     p{
         width: 150px;
         font-weight: 500;
+    }
+    @include screen-desktop{
+        margin: 0 25px;
+        margin-bottom: 0px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: 2px 6px 8px $colour-shadow;
+        padding: 25px;
     }
 }
 
@@ -32,6 +39,13 @@
     }
     .btn-validate{
         margin: 15px 0;
+    }
+    @include screen-desktop{
+        margin: 25px;
+        margin-top: 0px;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 2px 6px 8px $colour-shadow;
+        padding: 25px;
     }
 }
 
@@ -73,6 +87,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+    @include screen-desktop{
+        height: 180px;
+        padding: 25px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                width: 30%;
+            }
         }
     }
     

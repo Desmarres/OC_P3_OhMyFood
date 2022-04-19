@@ -1,4 +1,9 @@
 .svg{
+    margin: 0;
+    &__location{
+        fill: $colour-outside;
+        stroke: $colour-outside;
+    }
     &__smartphone{
         :nth-child(1){
             fill: lighten($colour-outside,50%);
@@ -10,7 +15,6 @@
         }
     }
     &__listing{
-        fill:"none";
         stroke: lighten($colour-outside,50%);
     }
     &__store{        
@@ -20,5 +24,13 @@
     &__heart{
         stroke: $colour-outside;
         fill: transparent;
+    }
+    &__utensils{
+        fill: $colour-inside;
+        stroke: $colour-inside;
+    }
+    &__hands{
+        fill: $colour-inside;
+        stroke: $colour-inside;
     }
 }

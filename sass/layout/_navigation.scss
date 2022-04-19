@@ -46,7 +46,7 @@ nav{
                     display: flex;
                     justify-content: space-between;
                     padding: 15px;
-                    figcaption{
+                    div{
                         display: flex;
                         flex-direction: column;
                     }
@@ -56,5 +56,35 @@ nav{
                 }
             }
         }        
+    }
+    @include screen-pad{
+        margin: 25px;
+        border-radius: 25px;
+        box-shadow: 2px 6px 8px $colour-shadow;
+        padding: 25px;
+        h2{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            li{
+                width: $width-desktop;
+            }
+        }
+    }
+    @include screen-desktop{
+        ul{
+            li {
+                figure{
+                    height: 300px;
+                    img{
+                        height: 225px;
+                    }
+                }
+            }
+        }
     }
 }

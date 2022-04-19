@@ -10,5 +10,11 @@ $font-title: 'Shrikhand';
 $font-text: 'Roboto';
 
 $width-mobile: 90%;
+$width-desktop: 40%;
 
 $border-radius-card-nav : 15px;
+
+$breakpoints:(
+    desktop: 950px,
+    pad: 750px
+)
