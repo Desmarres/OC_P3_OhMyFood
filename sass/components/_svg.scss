@@ -33,4 +33,8 @@
         fill: $colour-inside;
         stroke: $colour-inside;
     }
+    &__arrow{
+        stroke: $colour-outside;
+        fill: transparent;
+    }
 }

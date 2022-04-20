@@ -19,6 +19,11 @@ body {
   max-width: 1400px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -85,11 +90,16 @@ h1, h4 {
   stroke: #FFFFFF;
 }
 
+.svg__arrow {
+  stroke: #000000;
+  fill: transparent;
+}
+
 nav {
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F6F6F6;
   padding: 60px 0;
 }
 
@@ -122,27 +132,27 @@ nav ul li figure img {
 }
 
 nav ul li figure .new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 12px;
   top: 12px;
   background-color: #99E2D0;
   width: 80px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #299077;
   font-weight: bold;
   font-size: 0.9em;
 }
 
 nav ul li figure .banner {
+  display: flex;
+  justify-content: space-between;
   height: 75px;
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 0 0 15px 15px;
-  display: flex;
-  justify-content: space-between;
   padding: 15px;
 }
 
@@ -167,8 +177,8 @@ nav ul li figure .banner svg {
   }
   nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
   nav ul li {
@@ -186,22 +196,31 @@ nav ul li figure .banner svg {
 }
 
 header {
-  height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 63px;
+  position: relative;
 }
 
 header img {
   width: 165px;
 }
 
+header svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+}
+
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #343434;
   color: #FFFFFF;
   padding: 25px;
-  display: flex;
-  flex-direction: column;
 }
 
 footer h4 {
@@ -210,55 +229,67 @@ footer h4 {
 }
 
 footer li {
-  height: 25px;
   display: flex;
   align-items: center;
+  height: 25px;
 }
 
 footer li a {
-  color: #FFFFFF;
   display: flex;
   align-items: center;
+  color: #FFFFFF;
 }
 
 footer li a .svg {
-  width: 14px;
-  height: 14px;
-  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 750px) {
   footer {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   footer h4 {
     margin: 0;
   }
   footer ul {
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
   }
+}
+
+.foodPage footer {
+  position: relative;
+  top: -55px;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
+  z-index: 0;
+}
+
+.hero img {
+  height: 275px;
+  object-fit: cover;
 }
 
 .location {
-  order: 1;
-  background-color: #e9e9e9;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
+  background-color: #e9e9e9;
+  height: 50px;
   border-top: 3px outset #dddddd;
 }
 
@@ -284,13 +315,13 @@ footer li a .svg {
 }
 
 .presentation {
-  order: 2;
-  background-color: #F6F6F6;
-  height: 286px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  order: 2;
+  background-color: #F6F6F6;
+  height: 286px;
   text-align: center;
   padding: 40px;
 }
@@ -314,13 +345,15 @@ footer li a .svg {
 }
 
 .working {
-  height: 440px;
   display: flex;
   flex-direction: column;
+  height: 440px;
   padding: 60px 25px;
 }
 
 .working li {
+  display: flex;
+  align-items: center;
   position: relative;
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -328,21 +361,19 @@ footer li a .svg {
   margin: 20px 0;
   box-shadow: 2px 6px 8px #D5D5D5;
   font-weight: bold;
-  display: flex;
-  align-items: center;
   margin-left: 10px;
 }
 
 .working li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 27px;
   left: -10px;
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #9356DC;
   color: #FFFFFF;
   font-weight: 400;
@@ -350,12 +381,12 @@ footer li a .svg {
 }
 
 .working li svg {
-  height: 25px;
-  width: 20px;
-  margin: 0 20px 0 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 25px;
+  width: 20px;
+  margin: 0 20px 0 35px;
 }
 
 @media screen and (min-width: 950px) {
@@ -365,12 +396,39 @@ footer li a .svg {
   }
   .working ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .working ul li {
     width: 30%;
   }
+}
+
+.menu {
+  position: relative;
+  top: -55px;
+  padding: 30px 0;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+}
+
+.menu__heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: o;
+  width: 100%;
+}
+
+.menu__heading h1 {
+  font-weight: initial;
+  font-size: 1.8em;
+}
+
+.menu__heading svg {
+  width: 35px;
+  height: 35px;
 }
 
 .homePage h1 {

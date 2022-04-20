@@ -1,10 +1,8 @@
 .location{
+    @include flex(0,center,center,0);
     order:1;
     background-color: darken($color: $colour-bg, $amount: 5%);
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-top: 3px outset darken($color: $colour-bg, $amount: 10%);
     svg{
         width: 16px;
@@ -25,13 +23,10 @@
 }
 
 .presentation{
+    @include flex(column,space-between,center,0);
     order: 2;
     background-color: $colour-bg;
     height: 286px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     text-align: center;
     padding: 40px;
     p{
@@ -50,11 +45,11 @@
 }
 
 .working{
+    @include flex(column,0,0,0);
     height: 440px;
-    display: flex;
-    flex-direction: column;
     padding: 60px 25px;
     li{
+        @include flex(0,0,center,0);
         position: relative;
         background-color: $colour-bg;
         border-radius: 25px;
@@ -62,45 +57,55 @@
         margin: 20px 0;
         box-shadow: 2px 6px 8px $colour-shadow;
         font-weight: bold;
-        display: flex;
-        align-items: center;
         margin-left: 10px;
         p{
-            position: absolute;
-            top: 27px;
-            left: -10px;
+            @include flex(0,center,center,0);
+            @include element-position(absolute,27px,0,0,-10px);
             width: 20px;
             height: 20px;
             border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: $colour-primary;
             color: $colour-inside;
             font-weight: 400;
             font-size: .8em;
         }
         svg{
+            @include flex(0,center,center,0);
             height: 25px;
             width: 20px;
             margin:  0 20px 0 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
     @include screen-desktop{
         height: 180px;
         padding: 25px;
         ul{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            @include flex(0,space-between,0,wrap);
             li{
                 width: 30%;
             }
         }
     }
     
+}
+
+.menu{
+    @include element-position(relative,$position-menu-top,0,0,0);
+    padding: 30px 0;
+    background-color: $colour-bg;
+    border-radius: $border-radius-menu $border-radius-menu 0 0;
+    width: 100%;
+    &__heading{
+        @include flex(0,space-around,center,o);
+        width: 100%;
+        h1{
+            font-weight: initial;
+            font-size: 1.8em;
+        }
+        svg{
+            width: 35px;
+            height: 35px;
+        }
+    }
 }
 

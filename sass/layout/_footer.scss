@@ -1,43 +1,38 @@
 footer{
+    @include flex(column,0,0,0);
     background-color: darken($colour-bg, 76%);
     color: $colour-inside;
     padding: 25px;
-    display: flex;
-    flex-direction: column;
     h4{
         font-weight: 500;
         margin-bottom: 10px;
     }
     li{
+        @include flex(0,0,center,0);
         height: 25px;
-        display: flex;
-        align-items: center;
         a{
+            @include flex(0,0,center,0);
             color: $colour-inside;
-            display: flex;
-            align-items: center;
             .svg{
+                @include flex(0,center,center,0);
                 width: 14px;
                 height: 14px;
                 margin-right: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
         }
     }
     @include screen-pad{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flex(row,space-between,0,wrap);
         h4{
             margin: 0;
         }
         ul{
-            display: flex;
+            @include flex(0,space-around,0,wrap);
             flex: 1;
-            flex-wrap:wrap;
-            justify-content: space-around;
         }
     }
+}
+
+.foodPage footer{
+    @include element-position(relative,$position-menu-top,0,0,0);
 }
