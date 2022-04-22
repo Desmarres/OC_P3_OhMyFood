@@ -32,7 +32,3 @@ footer{
         }
     }
 }
-
-.foodPage footer{
-    @include element-position(relative,$position-menu-top,0,0,0);
-}
