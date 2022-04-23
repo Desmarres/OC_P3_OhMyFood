@@ -1,13 +1,18 @@
 .btn{
     &__validate{
-    height: 50px;
-    padding: 0 25px;
-    border-radius: 25px;
-    border: none;
-    background: linear-gradient(to left top, $colour-primary, $colour-secondary);
-    color: white;
-    font-size: 0.9em;
-    font-weight: bold;
-    box-shadow: 2px 6px 8px $colour-shadow;
+        height: 50px;
+        padding: 0 25px;
+        border-radius: 25px;
+        border: none;
+        background: linear-gradient(to left top, $colour-primary, $colour-secondary);
+        color: white;
+        font-size: 0.9em;
+        font-weight: bold;
+        box-shadow: 2px 5px 8px $colour-shadow;
+        &:hover{
+            transition: ease-out 250ms;
+            background: linear-gradient(to left top, lighten($colour-primary,$percentage-lighten-btn-validate), lighten($colour-secondary,$percentage-lighten-btn-validate));
+            box-shadow: 4px 10px 4px $colour-shadow;
+        }
     }
 }

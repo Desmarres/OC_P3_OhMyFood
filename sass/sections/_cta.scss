@@ -49,34 +49,31 @@
     height: 440px;
     padding: 60px 25px;
     background-color: $colour-inside;
-    li{
-        @include flex(0,0,center,0);
-        position: relative;
+    p{
+        @include flex(0,center,center,0);
+        @include element-position(absolute,27px,0,0,-10px);
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: $colour-primary;
+        color: $colour-inside;
+        font-weight: 400;
+        font-size: .8em;
+    }
+    svg{
+        @include flex(0,center,center,0);
+        height: 25px;
+        width: 20px;
+        margin:  0 20px 0 35px;
+    }
+    &__smartphone, &__listing{
+        @extend %working-li;
         background-color: $colour-bg;
-        border-radius: 25px;
-        height: 74px;
-        max-width: 415px;
-        margin: 20px 0;
-        box-shadow: 2px 6px 8px $colour-shadow;
-        font-weight: bold;
-        margin-left: 10px;
-        p{
-            @include flex(0,center,center,0);
-            @include element-position(absolute,27px,0,0,-10px);
-            width: 20px;
-            height: 20px;
-            border-radius: 20px;
-            background-color: $colour-primary;
-            color: $colour-inside;
-            font-weight: 400;
-            font-size: .8em;
-        }
-        svg{
-            @include flex(0,center,center,0);
-            height: 25px;
-            width: 20px;
-            margin:  0 20px 0 35px;
-        }
+    }
+    &__store{
+        @extend %working-li;
+        background-color: lighten($color: $colour-primary, $amount: $percentage-lighten-working);
+        
     }
     @include screen-desktop{
         height: 180px;
@@ -102,7 +99,7 @@
         @include flex(row,space-between,flex-start,wrap);
     }
     &__heading{
-        @include flex(0,space-around,center,o);
+        @include flex(0,space-around,center,0);
         width: 100%;
         h1{
             font-weight: initial;

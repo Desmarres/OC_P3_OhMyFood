@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+.working__smartphone, .working__listing, .working__store {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  height: 74px;
+  max-width: 415px;
+  margin: 20px 0;
+  box-shadow: 2px 6px 8px #D5D5D5;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +58,13 @@ h1, h4 {
   color: white;
   font-size: 0.9em;
   font-weight: bold;
-  box-shadow: 2px 6px 8px #D5D5D5;
+  box-shadow: 2px 5px 8px #D5D5D5;
+}
+
+.btn__validate:hover {
+  transition: ease-out 250ms;
+  background: linear-gradient(to left top, #a16be0, #ff93e1);
+  box-shadow: 4px 10px 4px #D5D5D5;
 }
 
 .svg {
@@ -72,13 +91,18 @@ h1, h4 {
 }
 
 .svg__store {
-  fill: gray;
-  stroke: gray;
+  fill: #9356DC;
+  stroke: #9356DC;
 }
 
 .svg__heart {
   stroke: #000000;
   fill: transparent;
+}
+
+.svg__heart:active, .svg__heart:hover {
+  stroke: url(#svg-gradient);
+  fill: url(#svg-gradient);
 }
 
 .svg__utensils {
@@ -94,6 +118,14 @@ h1, h4 {
 .svg__arrow {
   stroke: #000000;
   fill: transparent;
+}
+
+.svg-gradient-start {
+  stop-color: #FF79DA;
+}
+
+.svg-gradient-end {
+  stop-color: #9356DC;
 }
 
 nav {
@@ -272,9 +304,6 @@ footer li a .svg {
   display: flex;
   flex-direction: column;
   z-index: 0;
-}
-
-.hero img {
   height: 275px;
   object-fit: cover;
 }
@@ -348,21 +377,7 @@ footer li a .svg {
   background-color: #FFFFFF;
 }
 
-.working li {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  height: 74px;
-  max-width: 415px;
-  margin: 20px 0;
-  box-shadow: 2px 6px 8px #D5D5D5;
-  font-weight: bold;
-  margin-left: 10px;
-}
-
-.working li p {
+.working p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,13 +393,21 @@ footer li a .svg {
   font-size: .8em;
 }
 
-.working li svg {
+.working svg {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 25px;
   width: 20px;
   margin: 0 20px 0 35px;
+}
+
+.working__smartphone, .working__listing {
+  background-color: #F6F6F6;
+}
+
+.working__store {
+  background-color: #f2eafb;
 }
 
 @media screen and (min-width: 950px) {
@@ -428,7 +451,6 @@ footer li a .svg {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: o;
   width: 100%;
 }
 

@@ -18,12 +18,16 @@
         stroke: lighten($colour-outside,50%);
     }
     &__store{        
-        fill: lighten($colour-outside,50%);
-        stroke: lighten($colour-outside,50%);
+        fill: $colour-primary;
+        stroke: $colour-primary;
     }
     &__heart{
         stroke: $colour-outside;
         fill: transparent;
+        &:active, &:hover{
+            stroke: url(#svg-gradient);
+            fill: url(#svg-gradient);
+        }
     }
     &__utensils{
         fill: $colour-inside;
@@ -36,5 +40,14 @@
     &__arrow{
         stroke: $colour-outside;
         fill: transparent;
+    }
+}
+
+.svg-gradient{
+    &-start{
+        stop-color: $colour-secondary;
+    }
+    &-end{
+        stop-color: $colour-primary;
     }
 }

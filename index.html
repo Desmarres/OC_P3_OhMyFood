@@ -16,7 +16,7 @@
                 <div class="presentation">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'éxception, sélectionnés par nos soins.</p>
-                    <button class="btn__validate">
+                    <button class="btn btn__validate">
                         Explorer nos restaurants
                     </button>
                 </div> 
@@ -43,7 +43,7 @@
             <section class="working">
                 <h2>Fonctionnement</h2>
                 <ul>
-                    <li>
+                    <li class="working__smartphone">
                         <p>1</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
                         </svg>
                         Choisissez un restaurant
                     </li>
-                    <li>
+                    <li class="working__listing">
                         <p>2</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@
                         </svg>
                         Composez votre menu
                     </li>
-                    <li>
+                    <li class="working__store">
                         <p>3</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -170,19 +170,23 @@
                                             class="svg svg__heart"
                                             viewBox="0 0 500 500"
                                         >   
-                                            <path 
-                                                stroke-width="20"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="
-                                                    M 250,450
-                                                    L 100,260
-                                                    A 25,30,0,0,1,250,180
-                                                    A 25,30,0,0,1,400,260
-                                                    z
-                                            " />
-                                        </svg>     
-                                    </figcaption>                   
+                                        <linearGradient id="svg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop class="svg-gradient-start" offset="0%"/>
+                                            <stop class="svg-gradient-end" offset="100%"/>
+                                        </linearGradient>
+                                        <path 
+                                            stroke-width="20"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="
+                                                M 250,450
+                                                L 100,260
+                                                A 25,30,0,0,1,250,180
+                                                A 25,30,0,0,1,400,260
+                                                z
+                                        " />
+                                    </svg>     
+                                </figcaption>                   
                             </figure>
                         </a>
                     </li>
@@ -199,23 +203,23 @@
                                         <p>Charonne</p>  
                                     </div>
                                     <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="svg svg__heart"
-                                            viewBox="0 0 500 500"
-                                        >   
-                                            <path 
-                                                stroke-width="20"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="
-                                                    M 250,450
-                                                    L 100,260
-                                                    A 25,30,0,0,1,250,180
-                                                    A 25,30,0,0,1,400,260
-                                                    z
-                                            " />
-                                        </svg>     
-                                    </figcaption>                   
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="svg svg__heart"
+                                        viewBox="0 0 500 500"
+                                    >   
+                                        <path 
+                                            stroke-width="20"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="
+                                                M 250,450
+                                                L 100,260
+                                                A 25,30,0,0,1,250,180
+                                                A 25,30,0,0,1,400,260
+                                                z
+                                        " />
+                                    </svg>     
+                                </figcaption>                   
                             </figure>
                         </a>
                     </li>
@@ -259,23 +263,23 @@
                                         <p>Folie-Méricourt</p>  
                                     </div>
                                     <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="svg svg__heart"
-                                            viewBox="0 0 500 500"
-                                        >   
-                                            <path 
-                                                stroke-width="20"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="
-                                                    M 250,450
-                                                    L 100,260
-                                                    A 25,30,0,0,1,250,180
-                                                    A 25,30,0,0,1,400,260
-                                                    z
-                                            " />
-                                        </svg>     
-                                    </figcaption>                   
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="svg svg__heart"
+                                        viewBox="0 0 500 500"
+                                    >   
+                                        <path 
+                                            stroke-width="20"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="
+                                                M 250,450
+                                                L 100,260
+                                                A 25,30,0,0,1,250,180
+                                                A 25,30,0,0,1,400,260
+                                                z
+                                        " />
+                                    </svg>     
+                                </figcaption>                   
                             </figure>
                         </a>
                     </li>
