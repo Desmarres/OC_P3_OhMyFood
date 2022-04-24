@@ -51,3 +51,10 @@
     overflow: hidden;
     text-overflow: $text-overflow;
 }
+
+@mixin animation-menu($animation,$duration,$delay,$mode){
+    animation: $animation;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-fill-mode: $mode;
+}

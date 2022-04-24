@@ -130,7 +130,6 @@
             background-size:12% 3px;
             background-position: left bottom;
         }
-
     }
     &__dish{
         @include flex(0,space-between,flex-end,0);
@@ -166,6 +165,51 @@
     .btn__validate{
         width: 185px;
         margin-top: 20px;
+    }
+    .menu__choice:nth-child(2){
+        h2{
+        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, $timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(2){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.25*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(3){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.50*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(4){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.75*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(5){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
+        }
+    }
+    .menu__choice:nth-child(3){
+        h2{
+        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(2){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.25*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(3){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.50*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(4){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.75*$timer-animation-delay, backwards);
+        }
+    }
+    .menu__choice:nth-child(4){
+        h2{
+        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, 3*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(2){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.25*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(3){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.50*$timer-animation-delay, backwards);
+        }
+        .menu__dish:nth-child(4){
+            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.75*$timer-animation-delay, backwards);
+        }
     }
 }
 
