@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes fill-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes unfill-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .working__smartphone, .working__listing, .working__store {
   display: flex;
   align-items: center;
@@ -96,13 +114,35 @@ h1, h4 {
 }
 
 .svg__heart {
-  stroke: #000000;
-  fill: transparent;
+  background: linear-gradient(to left bottom, #9356DC, #FF79DA);
 }
 
-.svg__heart:active, .svg__heart:hover {
-  stroke: url(#svg-gradient);
-  fill: url(#svg-gradient);
+.svg__heart__check {
+  display: none;
+}
+
+.svg__heart__outside {
+  stroke: #F6F6F6;
+  fill: #F6F6F6;
+}
+
+.svg__heart__inside {
+  stroke: #000000;
+  fill: #F6F6F6;
+}
+
+.svg__heart__check:not(:checked) + label:active .svg__heart__inside {
+  animation: fill-heart 500ms;
+  animation-fill-mode: forwards;
+}
+
+.svg__heart__check:checked + label:active .svg__heart__inside {
+  animation: unfill-heart 500ms;
+  animation-fill-mode: forwards;
+}
+
+.svg__heart__check:checked + label .svg__heart__inside {
+  opacity: 0;
 }
 
 .svg__utensils {
@@ -120,15 +160,7 @@ h1, h4 {
   fill: transparent;
 }
 
-.svg-gradient-start {
-  stop-color: #FF79DA;
-}
-
-.svg-gradient-end {
-  stop-color: #9356DC;
-}
-
-nav {
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,41 +168,39 @@ nav {
   padding: 60px 0;
 }
 
-nav h2 {
+.nav h2 {
   width: 90%;
 }
 
-nav ul {
+.nav ul {
   width: 90%;
 }
 
-nav ul li {
-  margin: 20px 0;
-}
-
-nav ul li figure {
+.nav__cards {
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
   height: 250px;
   border-radius: 15px;
   box-shadow: 2px 6px 8px #D5D5D5;
   position: relative;
 }
 
-nav ul li figure img {
+.nav__cards__img {
   object-fit: cover;
   object-position: bottom;
   border-radius: 15px 15px 0 0;
   height: 175px;
+  width: 100%;
 }
 
-nav ul li figure .new {
+.nav__cards__new {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 12px;
   top: 12px;
+  right: 12px;
   background-color: #99E2D0;
   width: 80px;
   height: 30px;
@@ -179,9 +209,9 @@ nav ul li figure .new {
   font-size: 0.9em;
 }
 
-nav ul li figure .banner {
+.nav__cards__banner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: 75px;
   width: 100%;
   background-color: #FFFFFF;
@@ -189,41 +219,44 @@ nav ul li figure .banner {
   padding: 15px;
 }
 
-nav ul li figure .banner div {
-  display: flex;
-  flex-direction: column;
+.nav__cards__svg {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  height: 20px;
 }
 
-nav ul li figure .banner svg {
-  height: 30px;
+.nav__cards__svg .svg__heart__outside {
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 @media screen and (min-width: 750px) {
-  nav {
+  .nav {
     margin: 25px;
     border-radius: 25px;
     box-shadow: 2px 6px 8px #D5D5D5;
     padding: 25px;
   }
-  nav h2 {
+  .nav h2 {
     width: 100%;
   }
-  nav ul {
+  .nav ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
   }
-  nav ul li {
+  .nav__cards {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 950px) {
-  nav ul li figure {
+  .nav__cards {
     height: 300px;
   }
-  nav ul li figure img {
+  .nav__cards__img {
     height: 225px;
   }
 }

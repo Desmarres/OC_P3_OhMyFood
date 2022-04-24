@@ -1,4 +1,4 @@
-nav{
+.nav{
     @include flex(column,0,center,0);
     background-color: $colour-bg;
     padding: 60px 0;
@@ -6,49 +6,48 @@ nav{
         width: $width-mobile;
     }
     ul{
-        width: $width-mobile;
-        li{            
-            margin: 20px 0;
-            figure{
-                @include flex(column,0,0,0);
-                height: 250px;
-                border-radius: $border-radius-card-nav;
-                box-shadow: 2px 6px 8px $colour-shadow;
-                position: relative;
-                img{
-                    object-fit: cover;
-                    object-position: bottom;
-                    border-radius: $border-radius-card-nav $border-radius-card-nav 0 0;
-                    height: 175px;
-                }
-                .new{
-                    @include flex(0,center,center,0);
-                    position: absolute;
-                    right: 12px;
-                    top: 12px;
-                    background-color: $colour-tertiary;
-                    width: 80px;
-                    height: 30px;
-                    color: darken($colour-tertiary, 38%);
-                    font-weight: bold;
-                    font-size: 0.9em;
-                }
-                .banner{
-                    @include flex(0,space-between,0,0);
-                    height: 75px;
-                    width: 100%;
-                    background-color: $colour-inside;
-                    border-radius: 0 0 $border-radius-card-nav $border-radius-card-nav;
-                    padding: 15px;
-                    div{
-                        @include flex(column,0,0,0);
-                    }
-                    svg{
-                        height: 30px;
-                    }
-                }
+        width: $width-mobile;        
+    }
+    &__cards{
+        @include flex(column,0,0,0);
+        margin: 20px 0;
+        height: 250px;
+        border-radius: $border-radius-card-nav;
+        box-shadow: 2px 6px 8px $colour-shadow;
+        position: relative;
+        &__img{
+            object-fit: cover;
+            object-position: bottom;
+            border-radius: $border-radius-card-nav $border-radius-card-nav 0 0;
+            height: 175px;
+            width: 100%;
+        }
+        &__new{
+            @include flex(0,center,center,0);
+            @include element-position(absolute,12px,12px,0,0);
+            background-color: $colour-tertiary;
+            width: 80px;
+            height: 30px;
+            color: darken($colour-tertiary, 38%);
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        &__banner{
+            @include flex(column,0,0,0);
+            height: 75px;
+            width: 100%;
+            background-color: $colour-inside;
+            border-radius: 0 0 $border-radius-card-nav $border-radius-card-nav;
+            padding: 15px;
+        }
+        &__svg{
+            @include element-position(absolute,0,25px,30px,0);
+            height: 20px;
+            .svg__heart__outside{
+                stroke: $colour-inside;
+                fill: $colour-inside;
             }
-        }        
+        }
     }
     @include screen-pad{
         margin: 25px;
@@ -61,20 +60,16 @@ nav{
         ul{
             @include flex(0,space-around,0,wrap);
             width: 100%;
-            li{
-                width: $width-desktop;
-            }
+        }
+        &__cards{
+            width: $width-desktop;
         }
     }
     @include screen-desktop{
-        ul{
-            li {
-                figure{
-                    height: 300px;
-                    img{
-                        height: 225px;
-                    }
-                }
+        &__cards{
+            height: 300px;
+            &__img{
+                height: 225px;
             }
         }
     }

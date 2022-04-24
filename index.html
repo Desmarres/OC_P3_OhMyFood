@@ -150,138 +150,218 @@
                     </li>
                 </ul>
             </section>
-            <nav>
+            <nav class="nav">
                 <h2>Restaurants</h2>
                 <ul>
-                    <li>
+                    <li class="nav__cards">
                         <a href="lapalettedugout.html">
                             <figure>
-                                <img src="./img/jay-wennington-N_Y88TWmGwA-unsplash--Mini.webp" alt="Restaurants La palette de goût">
-                                <div class="new">
+                                <img class="nav__cards__img" src="./img/jay-wennington-N_Y88TWmGwA-unsplash--Mini.webp" alt="Restaurants La palette de goût">
+                                <div class="nav__cards__new">
                                     Nouveau
                                 </div>
-                                <figcaption class="banner">
-                                    <div>
-                                        <h3>La palette du goût</h3>
-                                        <p>Ménilmontant</p>  
-                                    </div>
-                                    <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="svg svg__heart"
-                                            viewBox="0 0 500 500"
-                                        >   
-                                        <linearGradient id="svg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop class="svg-gradient-start" offset="0%"/>
-                                            <stop class="svg-gradient-end" offset="100%"/>
-                                        </linearGradient>
-                                        <path 
-                                            stroke-width="20"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="
-                                                M 250,450
-                                                L 100,260
-                                                A 25,30,0,0,1,250,180
-                                                A 25,30,0,0,1,400,260
-                                                z
-                                        " />
-                                    </svg>     
-                                </figcaption>                   
+                                <figcaption class="nav__cards__banner">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </figcaption>
                             </figure>
                         </a>
+                        <input type="checkbox" id="svg__heart__check__lapalettedugout" class="svg__heart__check">
+                        <label for="svg__heart__check__lapalettedugout">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg svg__heart nav__cards__svg"
+                                viewBox="0 0 300 300"
+                            >
+                                <path 
+                                    class="svg__heart__outside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                        M 150,300
+                                        L 20,150
+                                        A 25,30,0,0,1,150,60
+                                        L 150,0
+                                        L 0,0
+                                        L 0,300
+                                        L 300,300
+                                        L 300,0
+                                        L 150,0
+                                        L 150,60
+                                        A 25,30,0,0,1,280,150
+                                        z
+                                " />
+                                <path 
+                                    class="svg__heart__inside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                    M 150,300
+                                    L 20,150
+                                    A 25,30,0,0,1,150,60
+                                    A 25,30,0,0,1,280,150
+                                    z
+                                " />
+                            </svg>
+                        </label>
                     </li>
-                    <li>
+                    <li class="nav__cards">
                         <a href="lanoteenchantee.html">
                             <figure>
-                                <img src="./img/stil-u2Lp8tXIcjw-unsplash--Mini.webp" alt="Restaurants La note enchantée">
-                                <div class="new">
+                                <img class="nav__cards__img" src="./img/stil-u2Lp8tXIcjw-unsplash--Mini.webp" alt="Restaurants La note enchantée">
+                                <div class="nav__cards__new">
                                     Nouveau
                                 </div>
-                                <figcaption class="banner">
-                                    <div>
-                                        <h3>La note enchantée</h3>
-                                        <p>Charonne</p>  
-                                    </div>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="svg svg__heart"
-                                        viewBox="0 0 500 500"
-                                    >   
-                                        <path 
-                                            stroke-width="20"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="
-                                                M 250,450
-                                                L 100,260
-                                                A 25,30,0,0,1,250,180
-                                                A 25,30,0,0,1,400,260
-                                                z
-                                        " />
-                                    </svg>     
-                                </figcaption>                   
+                                <figcaption class="nav__cards__banner">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </figcaption>
                             </figure>
                         </a>
+                        <input type="checkbox" id="svg__heart__check__lanoteenchantee" class="svg__heart__check">
+                        <label for="svg__heart__check__lanoteenchantee">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg svg__heart nav__cards__svg"
+                                viewBox="0 0 300 300"
+                            >
+                                <path 
+                                    class="svg__heart__outside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                        M 150,300
+                                        L 20,150
+                                        A 25,30,0,0,1,150,60
+                                        L 150,0
+                                        L 0,0
+                                        L 0,300
+                                        L 300,300
+                                        L 300,0
+                                        L 150,0
+                                        L 150,60
+                                        A 25,30,0,0,1,280,150
+                                        z
+                                " />
+                                <path 
+                                    class="svg__heart__inside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                    M 150,300
+                                    L 20,150
+                                    A 25,30,0,0,1,150,60
+                                    A 25,30,0,0,1,280,150
+                                    z
+                                " />
+                            </svg>
+                        </label>
                     </li>
-                    <li>
+                    <li class="nav__cards">
                         <a href="alafrancaise.html">
                             <figure>
-                                <img src="./img/toa-heftiba-DQKerTsQwi0-unsplash--Mini.webp" alt="Restaurants À le française">
-                                <figcaption class="banner">
-                                    <div>
-                                        <h3>À la française</h3>
-                                        <p>Cité Rouge</p>  
-                                    </div>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="svg svg__heart"
-                                        viewBox="0 0 500 500"
-                                    >   
-                                        <path 
-                                            stroke-width="20"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="
-                                                M 250,450
-                                                L 100,260
-                                                A 25,30,0,0,1,250,180
-                                                A 25,30,0,0,1,400,260
-                                                z
-                                        " />
-                                    </svg>     
-                                </figcaption>                   
+                                <img class="nav__cards__img" src="./img/toa-heftiba-DQKerTsQwi0-unsplash--Mini.webp" alt="Restaurants À le française">
+                                <figcaption class="nav__cards__banner">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </figcaption>
                             </figure>
                         </a>
+                        <input type="checkbox" id="svg__heart__check__alafrancaise" class="svg__heart__check">
+                        <label for="svg__heart__check__alafrancaise">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg svg__heart nav__cards__svg"
+                                viewBox="0 0 300 300"
+                            >
+                                <path 
+                                    class="svg__heart__outside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                        M 150,300
+                                        L 20,150
+                                        A 25,30,0,0,1,150,60
+                                        L 150,0
+                                        L 0,0
+                                        L 0,300
+                                        L 300,300
+                                        L 300,0
+                                        L 150,0
+                                        L 150,60
+                                        A 25,30,0,0,1,280,150
+                                        z
+                                " />
+                                <path 
+                                    class="svg__heart__inside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                    M 150,300
+                                    L 20,150
+                                    A 25,30,0,0,1,150,60
+                                    A 25,30,0,0,1,280,150
+                                    z
+                                " />
+                            </svg>
+                        </label>
                     </li>
-                    <li>
+                    <li class="nav__cards">
                         <a href="ledelicedessens.html">
                             <figure>
-                                <img src="./img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash--Mini.webp" alt="Restaurants Le délice des sens">
-                                <figcaption class="banner">
-                                    <div>
-                                        <h3>Le délice des sens</h3>
-                                        <p>Folie-Méricourt</p>  
-                                    </div>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="svg svg__heart"
-                                        viewBox="0 0 500 500"
-                                    >   
-                                        <path 
-                                            stroke-width="20"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="
-                                                M 250,450
-                                                L 100,260
-                                                A 25,30,0,0,1,250,180
-                                                A 25,30,0,0,1,400,260
-                                                z
-                                        " />
-                                    </svg>     
-                                </figcaption>                   
+                                <img class="nav__cards__img" src="./img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash--Mini.webp" alt="Restaurants Le délice des sens">
+                                <figcaption class="nav__cards__banner">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>  
+                                </figcaption>
                             </figure>
                         </a>
+                        <input type="checkbox" id="svg__heart__check__ledelicedessens" class="svg__heart__check">
+                        <label for="svg__heart__check__ledelicedessens">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg svg__heart nav__cards__svg"
+                                viewBox="0 0 300 300"
+                            >
+                                <path 
+                                    class="svg__heart__outside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                        M 150,300
+                                        L 20,150
+                                        A 25,30,0,0,1,150,60
+                                        L 150,0
+                                        L 0,0
+                                        L 0,300
+                                        L 300,300
+                                        L 300,0
+                                        L 150,0
+                                        L 150,60
+                                        A 25,30,0,0,1,280,150
+                                        z
+                                " />
+                                <path 
+                                    class="svg__heart__inside"
+                                    stroke-width="20"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="
+                                    M 150,300
+                                    L 20,150
+                                    A 25,30,0,0,1,150,60
+                                    A 25,30,0,0,1,280,150
+                                    z
+                                " />
+                            </svg>
+                        </label>
                     </li>
                 </ul>
             </nav>

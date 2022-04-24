@@ -34,27 +34,46 @@
             <section class="menu">
                 <div class="menu__heading">
                     <h1>La note enchantée</h1>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="svg svg__heart"
-                        viewBox="0 0 500 500"
-                    >
-                        <linearGradient id="svg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop class="svg-gradient-start" offset="0%"/>
-                            <stop class="svg-gradient-end" offset="100%"/>
-                        </linearGradient>
-                        <path 
-                            stroke-width="20"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="
-                                M 250,450
-                                L 100,260
-                                A 25,30,0,0,1,250,180
-                                A 25,30,0,0,1,400,260
+                    <input type="checkbox" id="svg__heart__check" class="svg__heart__check">
+                    <label for="svg__heart__check">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="svg svg__heart"
+                            viewBox="0 0 300 300"
+                        >
+                            <path 
+                                class="svg__heart__outside"
+                                stroke-width="20"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="
+                                    M 150,300
+                                    L 20,150
+                                    A 25,30,0,0,1,150,60
+                                    L 150,0
+                                    L 0,0
+                                    L 0,300
+                                    L 300,300
+                                    L 300,0
+                                    L 150,0
+                                    L 150,60
+                                    A 25,30,0,0,1,280,150
+                                    z
+                            " />
+                            <path 
+                                class="svg__heart__inside"
+                                stroke-width="20"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="
+                                M 150,300
+                                L 20,150
+                                A 25,30,0,0,1,150,60
+                                A 25,30,0,0,1,280,150
                                 z
-                        " />
-                    </svg>  
+                            " />
+                        </svg>
+                    </label>
                 </div>
                 <div class="menu__choice">
                     <h2>ENTRÉES</h2>
