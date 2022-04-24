@@ -151,18 +151,30 @@ h1, h4 {
   fill: #F6F6F6;
 }
 
-.svg__heart__check:not(:checked) + label:active .svg__heart__inside {
-  animation: fill-heart 500ms;
-  animation-fill-mode: forwards;
-}
-
-.svg__heart__check:checked + label:active .svg__heart__inside {
-  animation: unfill-heart 500ms;
-  animation-fill-mode: forwards;
-}
-
 .svg__heart__check:checked + label .svg__heart__inside {
   opacity: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .svg__heart__check:not(:checked) + label:focus .svg__heart__inside {
+    animation: fill-heart 500ms;
+    animation-fill-mode: forwards;
+  }
+  .svg__heart__check:checked + label:focus .svg__heart__inside {
+    animation: unfill-heart 500ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .svg__heart__check:not(:checked) + label:active .svg__heart__inside {
+    animation: fill-heart 500ms;
+    animation-fill-mode: forwards;
+  }
+  .svg__heart__check:checked + label:active .svg__heart__inside {
+    animation: unfill-heart 500ms;
+    animation-fill-mode: forwards;
+  }
 }
 
 .svg__utensils {
@@ -178,6 +190,19 @@ h1, h4 {
 .svg__arrow {
   stroke: #000000;
   fill: transparent;
+}
+
+.svg__validate__check {
+  display: none;
+}
+
+.svg__validate__circle {
+  fill: #FFFFFF;
+}
+
+.svg__validate__checked {
+  fill: transparent;
+  stroke: #99E2D0;
 }
 
 .nav {
@@ -554,6 +579,32 @@ footer li a .svg {
 
 .menu__dish strong {
   padding: 12px;
+}
+
+.menu__dish__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  height: 100%;
+  transform: scaleX(0);
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+}
+
+.menu__dish__check__svg {
+  height: 20px;
+}
+
+.menu__dish:hover .menu__dish__check {
+  width: 60px;
+  transform: scaleX(1);
+  transition-duration: 1000ms;
+}
+
+.menu__dish .svg__validate__check:checked + label {
+  width: 60px;
+  transform: scaleX(1);
 }
 
 .menu__detail {

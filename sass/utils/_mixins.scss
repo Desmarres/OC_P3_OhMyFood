@@ -10,6 +10,12 @@
     }
 }
 
+@mixin screen-mobile{
+    @media screen and (max-width:map-get($breakpoints, pad)) {
+        @content;
+    }
+}
+
 @mixin element-position($position,$top,$right,$bottom,$left){
     position: $position;
     @if ($top != 0){

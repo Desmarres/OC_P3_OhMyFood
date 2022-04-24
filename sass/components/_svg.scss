@@ -34,16 +34,28 @@
             stroke: $colour-outside;
             fill: $colour-bg;
         }
-        &__check:not(:checked) + label:active &__inside{
-            animation: fill-heart $timer-transition-fill-heart;
-            animation-fill-mode: forwards;
-        }
-        &__check:checked + label:active &__inside{
-            animation: unfill-heart $timer-transition-fill-heart;
-            animation-fill-mode: forwards;
-        }
         &__check:checked + label &__inside{
             opacity: 0;
+        }
+        @include screen-mobile{
+            &__check:not(:checked) + label:focus &__inside{
+                animation: fill-heart $timer-transition-fill-heart;
+                animation-fill-mode: forwards;
+            }
+            &__check:checked + label:focus &__inside{
+                animation: unfill-heart $timer-transition-fill-heart;
+                animation-fill-mode: forwards;
+            }
+        }
+        @include screen-desktop{
+            &__check:not(:checked) + label:active &__inside{
+                animation: fill-heart $timer-transition-fill-heart;
+                animation-fill-mode: forwards;
+            }
+            &__check:checked + label:active &__inside{
+                animation: unfill-heart $timer-transition-fill-heart;
+                animation-fill-mode: forwards;
+            }
         }
     }
     &__utensils{
@@ -57,5 +69,17 @@
     &__arrow{
         stroke: $colour-outside;
         fill: transparent;
+    }
+    &__validate{
+        &__check{
+            display: none;
+        }
+        &__circle{
+            fill: $colour-inside;
+        }
+        &__checked{
+            fill: transparent;
+            stroke: $colour-tertiary;
+        }
     }
 }

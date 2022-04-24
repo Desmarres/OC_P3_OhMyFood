@@ -141,6 +141,26 @@
         strong{
             padding: 12px;
         }
+        &__check{
+            @include flex(0,center,center,0);
+            width: 0px;
+            height: 100%;
+            transform: scaleX(0);
+            background-color: $colour-tertiary;
+            border-radius: 0 $border-radius-menu-dish $border-radius-menu-dish 0;
+            &__svg{
+                height: 20px;
+            }
+        }
+        &:hover &__check{
+            width: 60px;
+            transform: scaleX(1);
+            transition-duration: 1000ms;
+        }
+        .svg__validate__check:checked + label{
+            width: 60px;
+            transform: scaleX(1);
+        }
     }
     &__detail{
         @include flex(column,0,0,0);
