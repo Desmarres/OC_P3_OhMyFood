@@ -1,3 +1,42 @@
+.homePage{
+    header{
+        @include animation(loading-spinner__header,$timer-loading-spinner,$timer-loading-spinner-delay,backwards);
+        .svg__logo{
+            stroke: transparent;
+            &__letter{
+                &1{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,$timer-loading-spinner-delay,backwards);
+                }
+                &2{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(1/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &3{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(2/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &4{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(3/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &5{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(4/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &6{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(5/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &7{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(6/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+                &8{
+                    @include animation(loading-spinner,1/6*$timer-loading-spinner,(7/15*$timer-loading-spinner) + $timer-loading-spinner-delay,backwards);
+                }
+            }
+        }
+    }
+    main, footer{
+        @include animation(loading-spinner,$timer-loading-spinner,$timer-loading-spinner-delay,backwards);
+        animation-timing-function: step-end;
+    }
+}
+
 .location{
     @include flex(0,center,center,0);
     order:1;
@@ -188,47 +227,47 @@
     }
     .menu__choice:nth-child(2){
         h2{
-        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, $timer-animation-delay, backwards);
+        @include animation(appearance-menu__choice, $timer-animation-appearance-menu__choice, $timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(2){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.25*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.25*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(3){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.50*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.50*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(4){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.75*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 1.75*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(5){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
         }
     }
     .menu__choice:nth-child(3){
         h2{
-        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
+        @include animation(appearance-menu__choice, $timer-animation-appearance-menu__choice, 2*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(2){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.25*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.25*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(3){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.50*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.50*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(4){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.75*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 2.75*$timer-animation-delay, backwards);
         }
     }
     .menu__choice:nth-child(4){
         h2{
-        @include animation-menu(appearance-menu__choice, $timer-animation-appearance-menu__choice, 3*$timer-animation-delay, backwards);
+        @include animation(appearance-menu__choice, $timer-animation-appearance-menu__choice, 3*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(2){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.25*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.25*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(3){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.50*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.50*$timer-animation-delay, backwards);
         }
         .menu__dish:nth-child(4){
-            @include animation-menu(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.75*$timer-animation-delay, backwards);
+            @include animation(appearance-menu__dish, $timer-animation-appearance-menu__choice, 3.75*$timer-animation-delay, backwards);
         }
     }
 }

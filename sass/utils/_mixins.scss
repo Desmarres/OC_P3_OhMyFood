@@ -58,9 +58,21 @@
     text-overflow: $text-overflow;
 }
 
-@mixin animation-menu($animation,$duration,$delay,$mode){
-    animation: $animation;
-    animation-duration: $duration;
-    animation-delay: $delay;
-    animation-fill-mode: $mode;
+@mixin animation($animation,$duration,$delay,$mode){
+    @if ($animation != 0)
+    {
+        animation: $animation;
+    }
+    @if ($duration != 0)
+    {
+        animation-duration: $duration;
+    }
+    @if ($delay != 0)
+    {
+        animation-delay: $delay;
+    }
+    @if ($mode != 0)
+    {
+        animation-fill-mode: $mode;
+    }
 }

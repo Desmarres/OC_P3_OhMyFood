@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes loading-spinner__header {
+  0% {
+    fill: #FF79DA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    fill: #FF79DA;
+  }
+  60% {
+    fill: #9356DC;
+  }
+  70% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(1);
+  }
+  85% {
+    fill: #9356DC;
+    top: 50%;
+    left: 150%;
+  }
+  86% {
+    fill: #000000;
+    top: 0;
+    right: 150%;
+  }
+  100% {
+    fill: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes fill-heart {
   0% {
     opacity: 1;
@@ -311,19 +357,21 @@ header {
   justify-content: center;
   align-items: center;
   height: 63px;
+  width: 100%;
+  max-width: 1400px;
   position: relative;
 }
 
-header img {
-  width: 165px;
-}
-
-header svg {
+header .svg__arrow {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 25px;
   height: 25px;
+}
+
+header .svg__logo {
+  height: 34px;
 }
 
 footer {
@@ -384,6 +432,81 @@ footer li a .svg {
   z-index: 0;
   height: 275px;
   object-fit: cover;
+}
+
+.homePage header {
+  animation: loading-spinner__header;
+  animation-duration: 2500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo {
+  stroke: transparent;
+}
+
+.homePage header .svg__logo__letter1 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter2 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 666.66667ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter3 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 833.33333ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter4 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter5 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 1166.66667ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter6 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 1333.33333ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter7 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage header .svg__logo__letter8 {
+  animation: loading-spinner;
+  animation-duration: 416.66667ms;
+  animation-delay: 1666.66667ms;
+  animation-fill-mode: backwards;
+}
+
+.homePage main, .homePage footer {
+  animation: loading-spinner;
+  animation-duration: 2500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: step-end;
 }
 
 .location {
