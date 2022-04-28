@@ -190,6 +190,10 @@
             &__svg{
                 height: 20px;
             }
+            &:active &__svg{
+                transform: rotate(360deg);
+                transition-duration: 250ms;
+            }
         }
         &:hover &__check{
             width: 60px;

@@ -37,10 +37,12 @@
 
 @keyframes loading-spinner {
     0%{
-       transform: scale(0);
+       transform: scaleX(0);
+       transform-origin: right;
     }
     100%{
-        transform: scale(1);
+        transform: scaleX(1);
+        transform-origin: right;
     }
 }
 
