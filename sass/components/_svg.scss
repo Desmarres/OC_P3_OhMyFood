@@ -71,9 +71,6 @@
         fill: transparent;
     }
     &__validate{
-        &__check{
-            display: none;
-        }
         &__circle{
             fill: $colour-inside;
         }

@@ -240,10 +240,6 @@ h1, h4 {
   fill: transparent;
 }
 
-.svg__validate__check {
-  display: none;
-}
-
 .svg__validate__circle {
   fill: #FFFFFF;
 }
@@ -695,6 +691,7 @@ footer li a .svg {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
   background-color: #FFFFFF;
   border-radius: 15px;
   width: 100%;
@@ -704,6 +701,16 @@ footer li a .svg {
 
 .menu__dish strong {
   padding: 12px;
+}
+
+.menu__dish label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__dish__input {
+  display: none;
 }
 
 .menu__dish__check {
@@ -721,18 +728,19 @@ footer li a .svg {
   height: 20px;
 }
 
-.menu__dish__check:active .menu__dish__check__svg {
-  transform: rotate(360deg);
-  transition-duration: 250ms;
-}
-
 .menu__dish:hover .menu__dish__check {
   width: 60px;
   transform: scaleX(1);
   transition-duration: 1000ms;
 }
 
-.menu__dish .svg__validate__check:checked + label {
+.menu__dish:hover .menu__dish__check__svg {
+  transform: rotate(360deg);
+  transition-duration: 250ms;
+  transition-delay: 750ms;
+}
+
+.menu__dish__input:checked + label + .menu__dish__check {
   width: 60px;
   transform: scaleX(1);
 }
