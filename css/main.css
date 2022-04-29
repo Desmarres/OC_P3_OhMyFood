@@ -428,7 +428,7 @@ footer li a .svg {
   display: flex;
   flex-direction: column;
   z-index: 0;
-  height: 275px;
+  height: 335px;
   object-fit: cover;
 }
 
@@ -545,7 +545,7 @@ footer li a .svg {
   align-items: center;
   order: 2;
   background-color: #F6F6F6;
-  height: 286px;
+  height: 285px;
   text-align: center;
   padding: 40px;
 }
