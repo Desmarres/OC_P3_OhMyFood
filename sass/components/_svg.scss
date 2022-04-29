@@ -38,11 +38,11 @@
             opacity: 0;
         }
         @include screen-mobile{
-            &__check:not(:checked) + label:hover &__inside{
+            &__check:checked + label:hover &__inside{
                 animation: fill-heart $timer-transition-fill-heart;
                 animation-fill-mode: forwards;
             }
-            &__check:checked + label:hover &__inside{
+            &__check:not(:checked) + label:hover &__inside{
                 animation: unfill-heart $timer-transition-fill-heart;
                 animation-fill-mode: forwards;
             }
