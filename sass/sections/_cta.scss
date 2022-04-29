@@ -204,11 +204,11 @@
             width: 60px;
             transform: scaleX(1);
             transition-duration: 1000ms;
-            &__svg{
-                transform: rotate(360deg);
-                transition-duration: 250ms;
-                transition-delay: 750ms;
-            }
+        }
+        &:hover &__check{
+            width: 0px;
+            transform: scaleX(0);
+            transition-duration: 1000ms;
         }
         &__input:checked + label + &__check{
             width: 60px;

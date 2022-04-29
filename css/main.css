@@ -204,23 +204,23 @@ h1, h4 {
 }
 
 @media screen and (max-width: 750px) {
-  .svg__heart__check:not(:checked) + label:focus .svg__heart__inside {
-    animation: fill-heart 500ms;
+  .svg__heart__check:not(:checked) + label:hover .svg__heart__inside {
+    animation: fill-heart 750ms;
     animation-fill-mode: forwards;
   }
-  .svg__heart__check:checked + label:focus .svg__heart__inside {
-    animation: unfill-heart 500ms;
+  .svg__heart__check:checked + label:hover .svg__heart__inside {
+    animation: unfill-heart 750ms;
     animation-fill-mode: forwards;
   }
 }
 
 @media screen and (min-width: 950px) {
   .svg__heart__check:not(:checked) + label:active .svg__heart__inside {
-    animation: fill-heart 500ms;
+    animation: fill-heart 750ms;
     animation-fill-mode: forwards;
   }
   .svg__heart__check:checked + label:active .svg__heart__inside {
-    animation: unfill-heart 500ms;
+    animation: unfill-heart 750ms;
     animation-fill-mode: forwards;
   }
 }
@@ -734,10 +734,10 @@ footer li a .svg {
   transition-duration: 1000ms;
 }
 
-.menu__dish:hover .menu__dish__check__svg {
-  transform: rotate(360deg);
-  transition-duration: 250ms;
-  transition-delay: 750ms;
+.menu__dish:hover .menu__dish__check {
+  width: 0px;
+  transform: scaleX(0);
+  transition-duration: 1000ms;
 }
 
 .menu__dish__input:checked + label + .menu__dish__check {
