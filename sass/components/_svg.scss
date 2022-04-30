@@ -23,9 +23,6 @@
     }
     &__heart{
         background: linear-gradient(to left bottom, $colour-primary, $colour-secondary);
-        &__check{
-            display: none;
-        }
         &__outside{
             stroke: $colour-bg;
             fill: $colour-bg;
@@ -33,30 +30,14 @@
         &__inside{
             stroke: $colour-outside;
             fill: $colour-bg;
-        }
-        &__check:checked + label &__inside{
-            opacity: 0;
-        }
-        @include screen-mobile{
-            &__check:checked + label:hover &__inside{
-                animation: fill-heart $timer-transition-fill-heart;
-                animation-fill-mode: forwards;
-            }
-            &__check:not(:checked) + label:hover &__inside{
-                animation: unfill-heart $timer-transition-fill-heart;
-                animation-fill-mode: forwards;
+            opacity: 1;
+            transition: opacity $timer-transition-fill-heart;
+            &:hover{
+                opacity: 0;
+                transition: $timer-transition-fill-heart;
             }
         }
-        @include screen-desktop{
-            &__check:not(:checked) + label:active &__inside{
-                animation: fill-heart $timer-transition-fill-heart;
-                animation-fill-mode: forwards;
-            }
-            &__check:checked + label:active &__inside{
-                animation: unfill-heart $timer-transition-fill-heart;
-                animation-fill-mode: forwards;
-            }
-        }
+        
     }
     &__utensils{
         fill: $colour-inside;

@@ -43,7 +43,7 @@
     background-color: darken($color: $colour-bg, $amount: 5%);
     height: 50px;
     border-top: 3px outset darken($color: $colour-bg, $amount: 10%);
-    svg{
+    &__svg{
         width: 16px;
         height: 20px;
         margin-right: 14px;
@@ -71,7 +71,7 @@
     p{
         font-weight: 300;
     }
-    .btn-validate{
+    &__btn{
         margin: 15px 0;
     }
     @include screen-desktop{
@@ -145,8 +145,8 @@
             font-size: 1.8em;
         }
         svg{
-            width: 35px;
-            height: 35px;
+            width: 25px;
+            height: 25px;
         }
     }
     &__choice{
@@ -181,14 +181,6 @@
         strong{
             padding: 12px;
         }
-        label{
-            @include element-position(absolute,0px,0px,0,0);
-            width: 100%;
-            height: 100%;
-        }
-        &__input{
-            display: none;
-        }
         &__check{
             @include flex(0,center,center,0);
             width: 0px;
@@ -196,23 +188,22 @@
             transform: scaleX(0);
             background-color: $colour-tertiary;
             border-radius: 0 $border-radius-menu-dish $border-radius-menu-dish 0;
+            transition-duration: $timer-transition-appearance-check;
             &__svg{
                 height: 20px;
+                transition-duration: 0.5*$timer-transition-appearance-check;
             }
         }
         &:hover &__check{
             width: 60px;
             transform: scaleX(1);
-            transition-duration: 1000ms;
+            transform-origin: 100% 50%;
+            transition-duration: $timer-transition-appearance-check;
         }
-        &:hover &__check{
-            width: 0px;
-            transform: scaleX(0);
-            transition-duration: 1000ms;
-        }
-        &__input:checked + label + &__check{
-            width: 60px;
-            transform: scaleX(1);
+        &:hover &__check__svg{
+            transform: rotate(-360deg);
+            transition-duration: 0.5*$timer-transition-appearance-check;
+            transition-delay: 0.5*$timer-transition-appearance-check;
         }
     }
     &__detail{
