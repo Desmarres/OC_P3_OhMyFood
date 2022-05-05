@@ -9,6 +9,7 @@
         font-size: 0.9em;
         font-weight: bold;
         box-shadow: 2px 5px 8px $colour-shadow;
+        cursor: $cursor;
         &:hover{
             transition: ease-out 250ms;
             background: linear-gradient(to left top, lighten($colour-primary,$percentage-lighten-btn-validate), lighten($colour-secondary,$percentage-lighten-btn-validate));

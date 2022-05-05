@@ -9,13 +9,15 @@ $colour-shadow:#D5D5D5;
 $font-title: 'Shrikhand';
 $font-text: 'Roboto';
 
+$cursor: pointer;
+
 $width-mobile: 90%;
 $width-desktop: 40%;
 
 $percentage-lighten-btn-validate: 5%;
 $percentage-lighten-working: 35%;
 
-$timer-loading-spinner:2500ms;
+$timer-loading-spinner: 2500ms;
 $timer-loading-spinner-delay: 500ms;
 $timer-transition-fill-heart: 750ms;
 $timer-transition-appearance-check: 500ms;
@@ -26,7 +28,7 @@ $border-radius-card-nav: 15px;
 $border-radius-menu: 40px;
 $border-radius-menu-dish: 15px;
 
-$position-menu-top: -55px;
+$position-menu-top: -70px;
 
 $breakpoints:(
     desktop: 950px,
