@@ -21,6 +21,9 @@ body{
     margin: auto;
     max-width: 1400px;
     background-color: $colour-bg;
+    @include screen-desktop{
+        background-color: $colour-inside;
+    }
 }
 
 main{

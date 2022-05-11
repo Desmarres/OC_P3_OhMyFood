@@ -13,18 +13,21 @@
     70%{
         transform: scaleX(1);
         transform-origin: right;
+        transition-timing-function: ease-in;
     }
-    85%{
+    84%{
         fill:$colour-primary;
         top : 50%;
         transform: scaleX(0);
         transform-origin: right;
+        transition-timing-function: ease-in;
     }
     86%{
         fill: $colour-outside;
         top : 0;
         transform: scaleX(0);
         transform-origin: left;
+        transition-timing-function: ease-out;
     }
     100%{
         fill: $colour-outside;
@@ -32,6 +35,7 @@
         top : 0;
         transform: scaleX(1);
         transform-origin: left;
+        transition-timing-function: ease-out;
     }
 }
 
