@@ -106,7 +106,7 @@ body {
   background-color: #F6F6F6;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 750px) {
   body {
     background-color: #FFFFFF;
   }
@@ -406,8 +406,6 @@ footer li a .svg {
 
 .homePage header {
   animation: loading-spinner__header;
-  animation-duration: 2500ms;
-  animation-delay: 500ms;
   animation-fill-mode: backwards;
 }
 
@@ -417,64 +415,46 @@ footer li a .svg {
 
 .homePage header .svg__logo__letter1 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 500ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter2 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 666.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter3 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 833.33333ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter4 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 1000ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter5 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 1166.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter6 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 1333.33333ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter7 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 1500ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter8 {
   animation: loading-spinner;
-  animation-duration: 416.66667ms;
-  animation-delay: 1666.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage main, .homePage footer {
   animation: loading-spinner;
-  animation-duration: 2500ms;
-  animation-delay: 500ms;
   animation-fill-mode: backwards;
   animation-timing-function: step-end;
 }
@@ -679,9 +659,10 @@ footer li a .svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 0px;
   height: 100%;
+  width: 0px;
   transform: scaleX(0);
+  transform-origin: 100% 50%;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   transition-duration: 500ms;

@@ -183,9 +183,10 @@
         }
         &__check{
             @include flex(0,center,center,0);
-            width: 0px;
             height: 100%;
+            width: 0px;
             transform: scaleX(0);
+            transform-origin: 100% 50%;
             background-color: $colour-tertiary;
             border-radius: 0 $border-radius-menu-dish $border-radius-menu-dish 0;
             transition-duration: $timer-transition-appearance-check;
