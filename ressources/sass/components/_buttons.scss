@@ -11,7 +11,7 @@
         box-shadow: 2px 5px 8px $colour-shadow;
         cursor: $cursor;
         &:hover{
-            transition: ease-out 250ms;
+            transition: ease-out $timer-transition-btn__validate;
             background: linear-gradient(to left top, lighten($colour-primary,$percentage-lighten-btn-validate), lighten($colour-secondary,$percentage-lighten-btn-validate));
             box-shadow: 4px 10px 4px $colour-shadow;
         }

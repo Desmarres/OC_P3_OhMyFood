@@ -107,7 +107,7 @@ body {
 }
 
 @media screen and (min-width: 750px) {
-  body {
+  .homePage {
     background-color: #FFFFFF;
   }
 }
@@ -407,7 +407,7 @@ footer li a .svg {
 .homePage header {
   animation: loading-spinner__header;
   animation-duration: 2500ms;
-  animation-delay: 2500ms;
+  animation-delay: 500ms;
   animation-fill-mode: backwards;
 }
 
@@ -418,63 +418,63 @@ footer li a .svg {
 .homePage header .svg__logo__letter1 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 2500ms;
+  animation-delay: 500ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter2 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 2666.66667ms;
+  animation-delay: 666.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter3 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 2833.33333ms;
+  animation-delay: 833.33333ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter4 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 3000ms;
+  animation-delay: 1000ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter5 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 3166.66667ms;
+  animation-delay: 1166.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter6 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 3333.33333ms;
+  animation-delay: 1333.33333ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter7 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 3500ms;
+  animation-delay: 1500ms;
   animation-fill-mode: backwards;
 }
 
 .homePage header .svg__logo__letter8 {
   animation: loading-spinner;
   animation-duration: 416.66667ms;
-  animation-delay: 3666.66667ms;
+  animation-delay: 1666.66667ms;
   animation-fill-mode: backwards;
 }
 
 .homePage main, .homePage footer {
   animation: loading-spinner;
   animation-duration: 2500ms;
-  animation-delay: 2500ms;
+  animation-delay: 500ms;
   animation-fill-mode: backwards;
   animation-timing-function: step-end;
 }
@@ -632,6 +632,7 @@ footer li a .svg {
 .menu__heading svg {
   width: 25px;
   height: 25px;
+  height: 100%;
 }
 
 .menu__choice {
