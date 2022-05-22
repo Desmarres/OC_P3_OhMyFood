@@ -1,6 +1,6 @@
 # Dynamisez une page web avec des animations CSS
 
-Je suis le développeur junior de la startup _Ohmyfood_ et je suis chargé du développement du site en *HTML & CSS*.
+Je suis le développeur junior de la startup __Ohmyfood__ et je suis chargé du développement du site en *HTML & CSS*.
 
 ## Scénario
 
@@ -25,11 +25,11 @@ Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton re
 Les ressources sont :
 
 * [Brief](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf)
-* [Maquettes](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Maquettes%20Ohmyfood.zip
+* [Maquettes](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Maquettes%20Ohmyfood.zip)
 
 ## Pour voir le site
 
-[Ohmyfood](https://desmarres.github.io/OC_P3_OhMyFood/)
+[Lien vers le déploiement du projet Ohmyfood](https://desmarres.github.io/OC_P3_OhMyFood/)
 
 ## Technologie
 
